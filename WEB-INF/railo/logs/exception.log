@@ -1,0 +1,27 @@
+"Severity","ThreadID","Date","Time","Application","Message"
+"ERROR","web-0","09/15/2011","14:43:30","","request (path: /media/storage/websites/cherokee/WEB-INF/railo/context/admin/resources/img/railo.png.cfm (/media/storage/websites/cherokee/WEB-INF/railo/context/admin/Application.cfc):4) is run into a timeout (50 seconds) and has been stopped. no open locks
+	at java.lang.Object.wait(Native Method):-2
+	at java.lang.Object.wait(Object.java:485):485
+	at railo.commons.io.SystemUtil.wait(SystemUtil.java:437):437
+	at railo.commons.lang.StringKeyLock.wait(StringKeyLock.java:37):37
+	at railo.commons.lang.StringKeyLock.lock(StringKeyLock.java:30):30
+	at railo.runtime.PageContextImpl.initApplicationContext(PageContextImpl.java:2525):2525
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:127):127
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:23):23
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:1980):1980
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:281):281
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:32):32
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717):717
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290):290
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206):206
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233):233
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191):191
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127):127
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102):102
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109):109
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298):298
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859):859
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588):588
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489):489
+	at java.lang.Thread.run(Unknown Source):-1
+"
